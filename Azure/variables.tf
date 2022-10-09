@@ -25,3 +25,17 @@ variable "azports_allow" {
   type    = list(any)
   default = ["22"]
 }
+
+variable "az_vm" {
+  description = "Value for Azure VM name"
+  # basic types include string, number and bool
+  type    = string
+  default = "mytfvm1"
+}
+
+variable "az_users" {
+  description = "Value for Azure users"
+  # basic types include string, number and bool
+  type    = string
+  default = "azureuser"
+}
