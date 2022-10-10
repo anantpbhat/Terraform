@@ -81,7 +81,7 @@ resource "azurerm_network_interface_security_group_association" "TF_nic_nsg" {
 
 # Create storage account for boot diagnostics logs
 resource "azurerm_storage_account" "TF_storage_acct" {
-  name                     = "myTF_OSLogs"
+  name                     = var.az_oslogs
   location                 = azurerm_resource_group.TF_rg.location
   resource_group_name      = azurerm_resource_group.TF_rg.name
   account_tier             = "Standard"

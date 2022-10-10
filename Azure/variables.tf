@@ -39,3 +39,10 @@ variable "az_users" {
   type    = string
   default = "azureuser"
 }
+
+variable "az_oslogs" {
+  description = "Azure storage account for OS logs"
+  # basic types include string, number and bool
+  type    = string
+  default = "oslogs"
+}
